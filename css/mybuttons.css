@@ -1,18 +1,18 @@
-.social-wrapper{
+.sxc-wrapper{
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     grid-column-gap: 0.2em;
     grid-row-gap: 1em;
 }
 
-.social-box {
+.sxc-box {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 
-.social{
+.sxc{
 	background: none;
 	border: none !important;
 	color: white;
@@ -21,7 +21,7 @@
 	-webkit-font-smoothing: antialiased;
 }
 
-.social:focus, .social:hover {
+.sxc:focus, .sxc:hover {
 	outline: none !important;
 	box-shadow: unset !important;
 }
@@ -29,25 +29,25 @@
 
 
 @media (min-width: 1024px){
-  .social-wrapper{
+  .sxc-wrapper{
     grid-template-columns: repeat(6, 1fr);
   }
 }
 
 @media (max-width: 768px){
-    .social-wrapper{
+    .sxc-wrapper{
      grid-template-columns: repeat(3, 1fr);
     }
 }
 
 @media (max-width: 300px){
-  .social-wrapper{
+  .sxc-wrapper{
       grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media (max-width: 200px){
-    .social-wrapper{
+    .sxc-wrapper{
       grid-template-columns: repeat(1, minmax(50px, 1fr));
     }
 }
