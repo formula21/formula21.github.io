@@ -1,0 +1,31 @@
+[class*=font-foot-]{
+	font-family: 'Pacifico','Roboto', Helveltica,sans-serif;
+}
+
+.font-foot-0{
+	font-size: 40px;
+}
+
+.font-foot-0::before{
+	content: " ";
+}
+
+.font-foot-0::after{
+	content: "@formula21";
+}
+
+.copyright{
+	font-family: "Font Awesome 5 Pro";
+}
+
+.copyright::before{
+	content: "\f1f9";
+}
+
+.footer{
+	font-size: 30px;
+	position:relative;
+	left:0;
+	bottom:0;
+	width:100%
+}
