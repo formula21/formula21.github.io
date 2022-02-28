@@ -217,11 +217,11 @@
             </div>
          </div>
       </div>
-	  
-	  <style>.footer-support-ukraine,.generic-footer-support-ukraine{margin-bottom:98px}@media (min-width:374px){.footer-support-ukraine,.generic-footer-support-ukraine{margin-bottom:78px}}@media (min-width:546px){.footer-support-ukraine,.generic-footer-support-ukraine{margin-bottom:56px}}@media (min-width:1055px){.footer-support-ukraine,.generic-footer-support-ukraine{margin-bottom:0}}.disclaimer-support-ukraine{position:fixed;z-index:9999999;bottom:0;right:0;border-top:2px solid #ff5c62;text-align:center;font-size:14px;font-weight:400;background-color:#fff;padding:5px 10px 5px 10px}.disclaimer-support-ukraine a:hover{text-decoration:underline}@media (min-width:1052px){.disclaimer-support-ukraine{text-align:right;border-left:2px solid red;border-top-left-radius:10px}}@media (min-width:1920px){.disclaimer-support-ukraine{width:60%}}</style>
-	  
-	  <div class="disclaimer-support-ukraine">We support Ukraine and condemn war. Push Russian government to act against war. Be brave, vocal and show your support to Ukraine. Follow the latest news <a title="https://www.bbc.com/news/live/world-europe-60517447" target="_blank" href="https://www.bbc.com/news/live/world-europe-60517447" style="color: black;"><b>HERE</b></a></div>
-	  
+
+	    <style>.footer-support-ukraine,.generic-footer-support-ukraine{margin-bottom:98px}@media (min-width:374px){.footer-support-ukraine,.generic-footer-support-ukraine{margin-bottom:78px}}@media (min-width:546px){.footer-support-ukraine,.generic-footer-support-ukraine{margin-bottom:56px}}@media (min-width:1055px){.footer-support-ukraine,.generic-footer-support-ukraine{margin-bottom:0}}.disclaimer-support-ukraine{position:fixed;z-index:9999999;bottom:0;right:0;border-top:2px solid #ff5c62;text-align:center;font-size:14px;font-weight:400;background-color:#fff;padding:5px 10px 5px 10px}.disclaimer-support-ukraine a:hover{text-decoration:underline}@media (min-width:1052px){.disclaimer-support-ukraine{text-align:right;border-left:2px solid red;border-top-left-radius:10px}}@media (min-width:1920px){.disclaimer-support-ukraine{width:60%}}</style>
+
+	    <div class="disclaimer-support-ukraine">I support Ukraine and condemn war. Push Russian government to act against war. Be brave, vocal and show your support to Ukraine. Follow the latest news <a title="https://www.bbc.com/news/live/world-europe-60517447" target="_blank" href="https://www.bbc.com/news/live/world-europe-60517447" style="color: black;"><b>HERE</b></a></div>
+
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.bundle.min.js" integrity="sha512-wV7Yj1alIZDqZFCUQJy85VN+qvEIly93fIQAN7iqDFCPEucLCeNFz4r35FCo9s6WrpdDQPi80xbljXB8Bjtvcg==" crossorigin="anonymous"></script>
       <script src="./js/app.js" type="text/javascript"></script>
@@ -230,7 +230,7 @@
          	$("#btn").click(function(){
          		$("#pdf_modal").modal('toggle');
          	});
-         
+
          		$('html').css("--dw",$(window).width());
          		$('html').css("--dh",$(window).height());
          		$(window).resize(function(){
@@ -238,7 +238,7 @@
          				$('html').css("--dh",$(window).height());
          		});
          		$(window).scroll(function(){$(".slideanim").each(function(){$(this).offset().top<$(window).scrollTop()+600&&$(this).addClass("slide-j")})});
-         
+
          $('a[href*="#"]')
          		// Remove links that don't actually link to anything
           .not('[href="#"]')
@@ -277,7 +277,7 @@
          				}
          	    }
          	  });
-         
+
          		$('.sxc-box').find('a').each(function(){
          				$(this).click(function(e){
          						e.preventDefault();
@@ -296,15 +296,15 @@
          						});
          				});
          		});
-         
+
          		$('#alert_modal').on('hidden.bs.modal', function (event) {
          				$("#askRedirect, #askTitle").text("");
          				$("#continue_btn").prop("href","javascript:void(0)").unbind('click');
          		});
-         
+
          		$("#rlnk1").click(function(){
          			var offset = $(this).offset();
-         
+
          			var idx = $(this).text().indexOf('+');
          			if($(this).text().indexOf('+')==1){
          				$(this).text("(-)Read Less");
