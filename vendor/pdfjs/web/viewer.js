@@ -72,7 +72,7 @@ const defaultOptions = {
     kind: OptionKind.VIEWER + OptionKind.PREFERENCE
   },
   defaultUrl: {
-    value: "",
+    value: window.pdfjs.defaultUrl || "",
     kind: OptionKind.VIEWER
   },
   defaultZoomValue: {
@@ -169,7 +169,7 @@ const defaultOptions = {
     kind: OptionKind.API
   },
   cMapUrl: {
-    value: "../web/cmaps/",
+    value: window.pdfjs.cMapUrl || "../web/cmaps/",
     kind: OptionKind.API
   },
   disableAutoFetch: {
@@ -213,7 +213,7 @@ const defaultOptions = {
     kind: OptionKind.API
   },
   standardFontDataUrl: {
-    value: "../web/standard_fonts/",
+    value: window.pdfjs.standardFontDataUrl || "../web/standard_fonts/",
     kind: OptionKind.API
   },
   verbosity: {
@@ -225,7 +225,7 @@ const defaultOptions = {
     kind: OptionKind.WORKER
   },
   workerSrc: {
-    value: "../build/pdf.worker.js",
+    value: window.pdfjs.workerSrc || "../build/pdf.worker.js",
     kind: OptionKind.WORKER
   }
 };
@@ -239,7 +239,7 @@ const defaultOptions = {
     kind: OptionKind.VIEWER
   };
   defaultOptions.sandboxBundleSrc = {
-    value: "../build/pdf.sandbox.js",
+    value: window.pdfjs.sandboxBundleSrc || "../build/pdf.sandbox.js",
     kind: OptionKind.VIEWER
   };
   defaultOptions.renderer.kind += OptionKind.PREFERENCE;
@@ -3864,7 +3864,7 @@ let pdfjsLib;
 if (typeof window !== "undefined" && window["pdfjs-dist/build/pdf"]) {
   pdfjsLib = window["pdfjs-dist/build/pdf"];
 } else {
-  pdfjsLib = require("../build/pdf.js");
+  pdfjsLib = require(window.pdfjs.pdfjs || "../build/pdf.js");
 }
 
 module.exports = pdfjsLib;
@@ -9819,10 +9819,10 @@ class BaseViewer {
     }
 
     const viewerVersion = '2.11.251';
-
+	/*
     if (_pdfjsLib.version !== viewerVersion) {
       throw new Error(`The API version "${_pdfjsLib.version}" does not match the Viewer version "${viewerVersion}".`);
-    }
+    }*/
 
     this.container = options.container;
     this.viewer = options.viewer || options.container.firstElementChild;
