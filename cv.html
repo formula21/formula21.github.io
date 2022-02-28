@@ -402,6 +402,10 @@
           document.title = "Ciricullum Vitea of Anweshan Roy Chowdhury"
           const customProgress = document.querySelector("#customProgress");
           customProgress.style.display = "none";
+          let [download, downloadsecond] = [document.querySelector("#download"), document.querySelector("#secondaryDownload")]
+          download.onclick = function(){
+            downloadsecond.click();
+          }
       });
     </script>
   </body>
