@@ -5,8 +5,7 @@
 	cursor: pointer;
 }
 
-.fa-globe {
-	color: #82d1f2;
+.fa-enlarge{
 	font-size: 200px;
 }
 
@@ -77,7 +76,7 @@
 }
 
 .container-fluid-grey{
-	background-color: #e1e4ea;
+	background-color: #f2f2f2
 }
 
 .container-fluid-black{
@@ -115,7 +114,7 @@
 
 .brand-image{
 	background-repeat: no-repeat;
-	width:100px;
+	width:60px;
 	height:60px;
 }
 

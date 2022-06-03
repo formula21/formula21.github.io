@@ -10,6 +10,7 @@ self.addEventListener('activate', (event) => {
     console.log('👷', 'activate', event);
     return self.clients.claim();
 });
+
 self.addEventListener('fetch', function(event) {
     event.respondWith(
         caches.match(event.request)
