@@ -236,7 +236,9 @@
                   <a href="javascript:void(0)" id="rlnk2" style="color: rgb(6, 93, 187)">(+)Read Laptop Story</a>
                   <hr/>
                   <h2 style="font-family: Lato, sans-serif;"><i class="fad fa-brackets-curly"></i>&nbsp;Cool Software</h2>
-                  <p><i class="fad fa-clock"></i>&nbsp;Curating the list... Will be updated soon.</p>
+                  <p>Install <a href="https://code.visualstudio.com/" target="_blank" title="Visual Studio Code">Visual Studio Code</a> which is free & kind of excellent.</p>
+                  <p>Evaluating on the above point, I was not intially smart enough to realize the same. That has changed and now I could only write my preference. Firstly I would again like to emphasis on <a href="https://code.visualstudio.com/" target="_blank" title="Visual Studio Code">Visual Studio Code</a>. VSCode itself is great but what makes it excellent is all the community made plugins.</p>
+                  <p>I will be shortly adding the tailored list of plugins which you may install.</p>
                </div>
             </div>
          </div>
@@ -266,7 +268,7 @@
          <h1 style="text-align: center; margin-bottom: 40px; font-family:'La Belle Aurore',sans-serif,sans; color: white;">Follow Me</h1>
          <div class="sxc-wrapper" style="margin-top: 20px;">
             <div class="sxc-box">
-               <a href="https://fb.me/anweshan.roychowdhury" target="_blank" class="fab fa-facebook sxc noselect btn" title="Facebook"></a>
+               <a href="https://fb.me/anweshanrc" target="_blank" class="fab fa-facebook sxc noselect btn" title="Facebook"></a>
             </div>
             <div class="sxc-box">
                <a href="https://m.me/anweshan.roychowdhury" target="_blank" class="fab fa-facebook-messenger sxc noselect btn" title="Messenger by Facebook"></a>
@@ -421,14 +423,14 @@
             const LESS_PREPEND = '-'
 
             function expand(link_id, hide_inline_id, hide_id, read_more_string = 'Read More', read_less_string = 'Read Less', more_prepend = '+', less_prepend = '-'){
-                  console.log(`#${link_id}`);
-                  $(`#${link_id}`).click(function(){
-                  var offset = $(this).offset();
-
-                  if($(this).text().indexOf(`${more_prepend}`)==1){
+               
+               console.log(`#${link_id}`);
+               $(`#${link_id}`).click(function(){
+                  let offset = $(this).offset();
+                  if($(this).text().indexOf(`${more_prepend}`) == 1){
                      $(this).text(`(${less_prepend})${read_less_string}`);
                      $(`#${hide_inline_id}, #${hide_id}`).collapse('toggle');
-                  }else if($(this).text().indexOf(`${less_prepend}`)==1){
+                  }else if($(this).text().indexOf(`${less_prepend}`) == 1){
                      $(this).text(`(${more_prepend})${read_more_string}`);
                      $(`#${hide_inline_id}, #${hide_id}`).collapse('toggle');
                   }
